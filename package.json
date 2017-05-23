@@ -1,7 +1,7 @@
 {
   "name": "userlite-link",
   "main": "./lib/start",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Code sharing and versioning for Userlite developers.",
   "keywords": [],
   "activationCommands": {},
