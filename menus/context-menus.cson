@@ -1,0 +1,13 @@
+'context-menu':
+    '.list-tree.full-menu': [
+        { label: 'Download', command: 'userlite-link:download-selected' },
+        { label: 'Upload', command: 'userlite-link:upload-selected' }
+    ]
+    '.list-tree.multi-select': [
+        { label: 'Download', command: 'userlite-link:download-selected' },
+        { label: 'Upload', command: 'userlite-link:upload-selected' }
+    ]
+    '.dev-profile-icon.connected': [
+        { label: 'Send Current File', command: 'userlite-link:send-current-to-dev' },
+        # { label: 'Upload', command: 'userlite-link:upload-selected' }
+    ]

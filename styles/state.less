@@ -1,0 +1,61 @@
+@import "ui-variables";
+@import "octicon-mixins";
+
+@colors-danger: #ff6347;
+@colors-success: #459a44;
+@colors-info: #0f82e6;
+@colors-default: #9da5b4;
+@colors-jsYellow: #f4bf75;
+
+.ullink-state-element.upload {
+    height: 10px;
+    width: 10px;
+    margin: 10px;
+    background-color: @colors-success;
+    vertical-align: middle;
+    border-radius: 50px;
+}
+.ullink-state-element.download {
+    height: 25px;
+    width: 16px;
+    color: @colors-info;
+}
+.ullink-state-element.connected {
+    height: 25px;
+    width: 15px;
+    color: @colors-jsYellow;
+}
+.ullink-state-element.delete {
+    height: 25px;
+    width: 13px;
+    color: @colors-danger;
+}
+.ullink-state-element.disconnected {
+    height: 25px;
+    width: 15px;
+    color: @colors-default;
+}
+.ullink-state-element.warning {
+    height: 25px;
+    width: 16px;
+    color: @colors-danger;
+}
+td.dev-profile-td {
+    width: 33px;
+    padding: 0!important;
+}
+.dev-profile-icon {
+    height: 25px;
+    width: 25px;
+    margin: 3px 4px!important;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    transition: all .3s;
+}
+td .dev-profile-icon {
+    display: block;
+}
+.dev-profile-icon.disconnected {
+    opacity: .5;
+}

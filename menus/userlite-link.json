@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle userlite-link",
+        "command": "userlite-link:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "userlite-link",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "userlite-link:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

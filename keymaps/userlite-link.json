@@ -1,0 +1,15 @@
+{
+  "atom-workspace": {
+    "cmd-shift-m": "userlite-link:connect",
+    "ctrl-alt-o": "userlite-link:download-current",
+    "alt-cmd-o": "userlite-link:download-current",
+    "cmd-shift-e": "userlite-link:open-from-clipboard",
+    "cmd->": "userlite-link:toggle-error-console",
+    "cmd-shift-v": "userlite-link:toggle-file-versions",
+    "cmd-shift-c": "userlite-link:reveal-active-file",
+    "ctrl-shift-c": "userlite-link:reveal-active-file",
+    "ctrl-s": "userlite-link:save-with-intent",
+    "shift-cmd-k": "userlite-link:clean",
+    "shift-ctrl-k": "userlite-link:clean"
+  }
+}

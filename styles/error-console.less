@@ -1,0 +1,42 @@
+@import "ui-variables";
+@import "octicon-mixins";
+
+.error-console {
+  -webkit-flex: 0.25;
+  overflow: auto;
+
+  .error-header-text {
+      color: @text-color-error;
+  }
+
+  table {
+    .errorRow {
+      color: @text-color-warning;
+    }
+
+    .backtraceRow {
+      color: @text-color;
+    }
+
+    .errorRow .backtracePath {
+      .octicon(alert);
+    }
+
+    .errorRow .backtracePath::before {
+    //   margin-right: 5px;
+      font-size: 12px;
+    }
+
+    .backtraceRow .backtracePath{
+      .octicon(chevron-left);
+    }
+
+    .line, .selector, .backtracePath {
+      min-width: 10em;
+    }
+
+    .backtracePath {
+      cursor: pointer;
+    }
+  }
+}

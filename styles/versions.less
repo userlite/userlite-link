@@ -1,0 +1,137 @@
+@import "ui-variables";
+@import "octicon-mixins";
+
+.versions {
+    width: 500px;
+    overflow: auto;
+
+    #version-header-text {
+        color: @text-color-success;
+    }
+
+    .header-text {
+        font-size: 13px;
+    }
+
+    .versions-list {
+        overflow: scroll;
+    }
+
+    td pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+
+    .git-console {
+        height: 500px;
+        display: none;
+        position: fixed;
+        background-color: #333840;
+        width: 500px;
+        overflow: scroll;
+    }
+
+    .diffs-container>table {
+
+        border-collapse: separate;
+        border-spacing: 2px;
+
+        tr.diffRow.remove td:first-child {
+            border-left: 2px solid @text-color-error;
+        }
+
+        tr.diffRow.add td:first-child {
+            border-left: 2px solid @text-color-success;
+            margin: 12px 0;
+        }
+
+        td.diffLineNumber {
+            width: 3px;
+            padding: 0 5px;
+        }
+
+        td.diffLineText {
+            word-break: break-word;
+        }
+
+        tr.diff-group-break {
+            height: 10px;
+        }
+
+        tr {
+            line-height: 20px;
+        }
+
+        tr td {
+            border-bottom: none;
+        }
+
+    }
+
+    table {
+
+        width: 102%;
+
+        tr.diffContainer:not(.active) {
+            display: none;
+        }
+
+        tr:not(:last-child) td {
+            border-bottom: 1px solid #3a3a3a;
+        }
+
+        .versionRow {
+            cursor: pointer;
+            color: @text-color;
+        }
+
+        .versionRow.auto {
+            display: none;
+        }
+
+        .versionRow:hover {
+            background-color: #2f353e;
+        }
+
+        .versionRow.selected {
+            background-color: #2f353e;
+            border-left: 3px solid #bf7dbf;
+        }
+
+        .versionRow .created::before {
+            margin-right: 12px;
+            font-size: 12px;
+        }
+
+        .versionRow button {
+            font-size: 11px;
+            color: #484848;
+            background-color: #fbfbfb;
+            border: 0;
+            border-radius: 3px;
+            margin-left: 7px;
+        }
+
+        .versionRow td:last-child {
+            text-align: right;
+        }
+
+        .versionRow button.downloadVersion {
+            background-color: @text-color-success;
+            color: #FFF;
+        }
+        .versionRow button.icon::before {
+            margin: 0;
+        }
+
+        .versionRow button.squashVersion {
+            margin-left: 12px;
+            background-color: @text-color-error;
+        }
+
+        .line, .selector, .created {
+            min-width: 10em;
+        }
+
+    }
+}
