@@ -9,6 +9,7 @@
     "cmd-shift-c": "userlite-link:reveal-active-file",
     "ctrl-shift-c": "userlite-link:reveal-active-file",
     "ctrl-s": "userlite-link:save-with-intent",
+    "shift-cmd-j": "userlite-link:connect",
     "shift-cmd-k": "userlite-link:clean",
     "shift-ctrl-k": "userlite-link:clean"
   }

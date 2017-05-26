@@ -39,7 +39,7 @@
     button.show-all {
         float: right;
     }
-    
+
     button.show-all.collapse {
         color: #FFF;
         background-color: @background-color-info;
@@ -56,53 +56,6 @@
     td pre {
         white-space: pre-wrap;
         word-break: break-word;
-    }
-
-    .git-console {
-        height: 500px;
-        display: none;
-        position: fixed;
-        background-color: #333840;
-        width: 500px;
-        overflow: scroll;
-    }
-
-    .diffs-container>table {
-
-        border-collapse: separate;
-        border-spacing: 2px;
-
-        tr.diffRow.remove td:first-child {
-            border-left: 2px solid @text-color-error;
-        }
-
-        tr.diffRow.add td:first-child {
-            border-left: 2px solid @text-color-success;
-            margin: 12px 0;
-        }
-
-        td.diffLineNumber {
-            width: 3px;
-            padding: 0 5px;
-        }
-
-        td.diffLineText {
-            word-break: break-word;
-        }
-
-        tr.diff-group-break {
-            height: 10px;
-        }
-
-        tr {
-            line-height: 20px;
-            transition: height: 1s;
-        }
-
-        tr td {
-            border-bottom: none;
-        }
-
     }
 
     table {
@@ -176,6 +129,54 @@
 
         .line, .selector, .created {
             min-width: 10em;
+        }
+
+    }
+
+    .git-console {
+        height: 450px;
+        position: fixed;
+        bottom: 0;
+        background-color: #333840;
+        width: 500px;
+        overflow: scroll;
+    }
+
+    .git-console>table {
+
+        border-collapse: separate;
+        border-spacing: 2px;
+
+        tr.diff-row.remove td:first-child {
+            border-left: 2px solid @text-color-error;
+        }
+
+        tr.diff-row.add td:first-child {
+            border-left: 2px solid @text-color-success;
+            margin: 12px 0;
+        }
+
+        td.diff-line-number {
+            width: 3px;
+            padding: 0 5px;
+            -webkit-user-select: none;
+        }
+
+        td.diff-line-text {
+            word-break: break-word;
+        }
+
+        tr.diff-group-break {
+            height: 10px;
+        }
+
+        tr {
+            line-height: 20px;
+            transition: height: 1s;
+        }
+
+        tr td {
+            border-bottom: none;
         }
 
     }
