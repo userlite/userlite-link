@@ -1,11 +1,13 @@
 {
   "name": "userlite-link",
   "main": "./lib/start",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Code sharing and versioning for Userlite developers.",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": ["userlite-link:connect"]
+    "atom-workspace": [
+      "userlite-link:connect"
+    ]
   },
   "repository": "https://github.com/userlite/userlite-link",
   "license": "MIT",
