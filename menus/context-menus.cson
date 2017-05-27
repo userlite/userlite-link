@@ -7,7 +7,7 @@
         { label: 'Download', command: 'userlite-link:download-selected' },
         { label: 'Upload', command: 'userlite-link:upload-selected' }
     ]
-    '.dev-profile-icon.connected': [
+    '.dev-profile-icon.connected:not(.appman)': [
         { label: 'Send Current File', command: 'userlite-link:send-current-to-dev' },
         # { label: 'Upload', command: 'userlite-link:upload-selected' }
     ]
