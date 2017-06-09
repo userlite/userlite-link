@@ -1,11 +1,15 @@
 'context-menu':
     '.list-tree.full-menu': [
-        { label: 'Download', command: 'userlite-link:download-selected' },
-        { label: 'Upload', command: 'userlite-link:upload-selected' }
+        { type: 'separator'},
+        { label: 'UL Download', command: 'userlite-link:download-selected' },
+        { label: 'UL Upload', command: 'userlite-link:upload-selected' },
+        { label: 'UL Delete', command: 'userlite-link:delete-selected' }
     ]
     '.list-tree.multi-select': [
-        { label: 'Download', command: 'userlite-link:download-selected' },
-        { label: 'Upload', command: 'userlite-link:upload-selected' }
+        {type: 'separator'},
+        { label: 'UL Download', command: 'userlite-link:download-selected' },
+        { label: 'UL Upload', command: 'userlite-link:upload-selected' },
+        { label: 'UL Delete', command: 'userlite-link:delete-selected' }
     ]
     '.dev-profile-icon.connected:not(.appman)': [
         { label: 'Send Current File', command: 'userlite-link:send-current-to-dev' },
