@@ -67,6 +67,7 @@
         width: 100%;
 
         td pre {
+            background-color: @background-color-highlight;
             white-space: pre-wrap;
             word-break: break-word;
         }
@@ -76,15 +77,15 @@
         }
 
         tr:not(:last-child) td {
-            border-bottom: 1px solid #3a3a3a;
+            border-bottom: 1px solid @base-border-color;
         }
 
         .version-row:hover {
-            background-color: #2f353e;
+            background-color: @background-color-highlight;
         }
 
         .version-row.selected {
-            background-color: #2f353e;
+            background-color: @background-color-highlight;
             border-left: 3px solid #bf7dbf;
         }
 
@@ -142,11 +143,42 @@
 
     }
 
+    .comment-box {
+        height: 380px;
+        position: fixed;
+        bottom: 0;
+        background-color: @background-color-highlight;
+        width: 500px;
+        overflow: scroll;
+    }
+
+    .comment-box textarea {
+        margin: 2px;
+        padding: 5px;
+        width: 496px;
+        height: 150px;
+        resize: none;
+        border-radius: 3px;
+        border: 1px solid @base-border-color;
+    }
+
+    .comment-box button {
+        float: right;
+        margin: 2px 5px;
+        padding: 5px 10px;
+        font-size: 1.1em;
+    }
+
+    .comment-box button.save {
+        background-color: @background-color-info;
+        color: #FFF;
+    }
+
     .git-console {
         height: 380px;
         position: fixed;
         bottom: 0;
-        background-color: #333840;
+        background-color: @background-color-highlight;
         width: 500px;
         overflow: scroll;
     }
