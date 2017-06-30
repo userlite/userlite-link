@@ -2,41 +2,43 @@
 @import "octicon-mixins";
 
 .error-console {
-  -webkit-flex: 0.25;
-  overflow: auto;
+    -webkit-flex: 0.25;
+    overflow: auto;
 
-  .error-header-text {
-      color: @text-color-error;
-  }
-
-  table {
-    .errorRow {
-      color: @text-color-warning;
+    .error-header-text {
+        color: @text-color-error;
     }
 
-    .backtraceRow {
-      color: @text-color;
-    }
+    table {
+        .errorRow {
+            color: @text-color-warning;
+        }
 
-    .errorRow .backtracePath {
-      .octicon(alert);
-    }
+        .backtraceRow {
+            color: @text-color;
+        }
 
-    .errorRow .backtracePath::before {
-    //   margin-right: 5px;
-      font-size: 12px;
-    }
+        .errorRow .backtracePath {
+            .octicon(alert);
+        }
 
-    .backtraceRow .backtracePath{
-      .octicon(chevron-left);
-    }
+        .errorRow .backtracePath::before {
+            //   margin-right: 5px;
+            font-size: 12px;
+        }
 
-    .line, .selector, .backtracePath {
-      min-width: 10em;
-    }
+        .backtraceRow .backtracePath {
+            .octicon(chevron-left);
+        }
 
-    .backtracePath {
-      cursor: pointer;
+        .line,
+        .selector,
+        .backtracePath {
+            min-width: 10em;
+        }
+
+        .backtracePath {
+            cursor: pointer;
+        }
     }
-  }
 }
