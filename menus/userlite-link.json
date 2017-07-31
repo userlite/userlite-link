@@ -1,26 +1,18 @@
 {
-  "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "Toggle userlite-link",
-        "command": "userlite-link:toggle"
-      }
-    ]
-  },
-  "menu": [
-    {
-      "label": "Packages",
-      "submenu": [
+    "menu": [
         {
-          "label": "userlite-link",
-          "submenu": [
-            {
-              "label": "Toggle",
-              "command": "userlite-link:toggle"
-            }
-          ]
+            "label": "Packages",
+            "submenu": [
+                {
+                    "label": "userlite-link",
+                    "submenu": [
+                        {
+                            "label": "Connect",
+                            "command": "userlite-link:connect"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
